@@ -1,22 +1,26 @@
-function log(msg) {
-    const logElem = document.querySelector(".log");
+function PublicacionInicio(titulo, imagen, introduccion, url_publicacion) {
   
-    const time = new Date();
-    const timeStr = time.toLocaleTimeString();
-    logElem.innerHTML += `${timeStr}: ${msg}<br/>`;
-  }
+  var titulo = document.getElementsByName("titulo")[0].value;
+  var imagen = document.getElementsByName("imagen")[0].value;
+  var introduccion = document.getElementsByName("introduccion")[0].value;
+  var url_publicacion = document.getElementsByName("url_publicacion")[0].value;
+
+  document.getElementById("PublicacionInicio").innerHTML =
+  `<div class="card mb-3 border border-dark border-3">
+  <div class="px-3 py-2 border-bottom border-dark border-5 color2 letraF">
+    <b class="text-capitalize">${titulo}</b>
+  </div>
+  <div class="card-body">
+
+    <div class="container px-4">
+      <img src="${imagen}" class="img-fluid">
+    </div>
+
+    <p class="card-text">${introduccion}</p>
+    <a href="${url_publicacion}"
+      class="btn color1 border-dark border-3 letraF btn-outline focus-ring focus-ring-dark">Leer
+      Publicación</a>
+  </div>
+  </div>`;
   
-  log("Logging mouse events inside this container…");
-
-  function logEvent(event) {
-    const msg = `Event <strong>${event.type}</strong> at <em>${event.clientX}, ${event.clientY}</em>`;
-    log(msg);
-  }
-
-  const boxElem = document.querySelector(".box");
-
-boxElem.addEventListener("mousedown", logEvent);
-boxElem.addEventListener("mouseup", logEvent);
-boxElem.addEventListener("click", logEvent);
-boxElem.addEventListener("mouseenter", logEvent);
-boxElem.addEventListener("mouseleave", logEvent);
+}
