@@ -1,82 +1,464 @@
-<!doctype html>
-
-<style>
-  .negrilla {
-    font-size:500%;
-    font-weight: 900;
-  }
-
-  @media (max-width: 770px) {
-    .negrilla {
-      font-size:400%;
-      font-weight: 900;
-    }
-
-  }
-
-  @media (max-width: 642px) {
-    .negrilla {
-      font-size:300%;
-      font-weight: 900;
-    }
-
-  }
-
-  @media (max-width: 515px) {
-    .negrilla {
-      font-size:190%;
-      font-weight: 900;
-    }
-
-  }
-
-  .por{
-    font-weight: 200;
-  }
-</style>
-
+<!doctype html5>
 <html lang="es">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google-site-verification" content="G-SfrnrgMqnSvn50jSE1iqrEkNC0c3MrYyfQjBFjI30" />
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Blog: Jean Paul Carrillo Galindo</title>
-    <link rel="icon" href="https://raw.githubusercontent.com/JeanPCarrilloG/JeanPCarrilloG/main/ICONS/icons8-blog.png" type="image/icon">
-  </head>
-  <body style="background-color:#dc3545">
 
-    <div class="container-fluid p-3">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="G-SfrnrgMqnSvn50jSE1iqrEkNC0c3MrYyfQjBFjI30" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Blog: Jean Paul Carrillo Galindo</title>
+  <link rel="icon" href="https://raw.githubusercontent.com/JeanPCarrilloG/JeanPCarrilloG/main/ICONS/icons8-blog.png"
+    type="image/icon">
+  <link href="Styles/Style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="color1">
+  <!--href="https://jeanpcarrillog.github.io/"-->
+
+  <div class="container-fluid p-3">
 
     <nav class="navbar navbar-dark bg-dark p-3 rounded-pill">
       <div class="container-fluid">
-        <a class="navbar-brand" href="https://jeanpcarrillog.github.io/">
-          <img src="https://raw.githubusercontent.com/JeanPCarrilloG/JeanPCarrilloG/main/ICONS/icons8-blog.png" alt="" width="36" height="30" class="d-inline-block align-text-top">
+        <a class="navbar-brand" href="file:///home/redes/Desarrollo/Github/JeanPCarrilloG.github.io/index.html?#">
+          <img src="https://raw.githubusercontent.com/JeanPCarrilloG/JeanPCarrilloG/main/ICONS/icons8-blog.png" alt=""
+            width="36" height="30" class="d-inline-block align-text-top">
           Blog
         </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+
+            <a class="navbar-brand" href="https://jeanpcarrillog.github.io/">
+              <img src="https://raw.githubusercontent.com/JeanPCarrilloG/JeanPCarrilloG/main/ICONS/icons8-blog.png"
+                alt="" width="36" height="30" class="d-inline-block align-text-top">
+              Blog
+            </a>
+
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page"
+                  href="file:///home/redes/Desarrollo/Github/JeanPCarrilloG.github.io/index.html?#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Publicaciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Artículos</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Desplegable
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Publicaciones</a></li>
+                  <li><a class="dropdown-item" href="#">Artículos</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Elemento</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Escribe tus términos de búsqueda "
+                aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+
       </div>
     </nav>
 
-    <div class="text-center p-5">
-      <h1 class="fw-bold negrilla pt-5" style="color:#FFFFFF">☆ En desarrollo...</h1>
-    </div>
-    
-
-    <div class="text-center pb-5" >
-      <a href="https://www.facebook.com/"  ><img src="https://raw.githubusercontent.com/JeanPCarrilloG/JeanPCarrilloG/main/ICONS/icons8-facebook.png"/></a>
-      <a href="https://www.x.com/"  ><img src="https://raw.githubusercontent.com/JeanPCarrilloG/JeanPCarrilloG/main/ICONS/icons8-x.png"/></a>
-      <a href="https://www.instagram.com/"  ><img src="https://raw.githubusercontent.com/JeanPCarrilloG/JeanPCarrilloG/main/ICONS/icons8-instagram.png"/></a>
+    <div class="text-center p-3">
+      <h1 class="fw-bold negrilla letraF">☆ Publicaciones</h1>
     </div>
 
-    <div class="container-fluid p-5">
-      <h6 class="text-end" style="color:#FFFFFF"><b>Elaborado por:</b></h6>
-      <h6 class="text-end por" style="color:#FFFFFF">Jean Paul Carrillo Galindo</h6>
-    </div>
+    <div class="container">
+      <div class="row align-items-center">
+
+        <div class="publicacion_inicio">
+
+          <div class="container px-4 pb-4">
+            <div class="row gx-5">
+              <div class="col align-self-center">
+                <div class="p-1 border border-dark color0 rounded-3">
+
+                  <div class="card mb-3 border border-dark border-3">
+                    <div class="px-3 py-2 border-bottom border-dark border-5 color2 letraF">
+                      <b class="text-capitalize">Publicación 1</b>
+                    </div>
+                    <div class="card-body">
+
+                      <div class="container px-4">
+                        <img src="https://img.icons8.com/?size=512&id=9860&format=png" class="img-fluid">
+                      </div>
+
+                      <p class="card-text">Texto texto texto texto texto texto texto texto texto texto texto texto texto
+                        texto texto.</p>
+                      <a href="#"
+                        class="btn color1 border-dark border-3 letraF btn-outline focus-ring focus-ring-dark">Leer
+                        Publicación</a>
+                    </div>
+                  </div>
+
+                  <div class="accordion border border-dark border-3" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed color2 letraF focus-ring" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                          aria-controls="panelsStayOpen-collapseOne">
+                          <b class="text-capitalize">Artículos Relacionados</b>
+                        </button>
+                      </h2>
+
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+
+                          <a href="https://cnnespanol.cnn.com/video/antisemitismo-actos-aumento-trax/"
+                            class="btn color0 border-dark border-3 letraF btn-outline focus-ring focus-ring-dark mt-3">
+                            <div class="row align-items-center">
+                              <div class="columna_articulos">
+                                <div class="row justify-content-center">
+                                  <div class="columna_articulos">
+                                    <img
+                                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTugKw7h3cekUXKXRVM952mml4X2eNyeS0AZxOYkixFyIufIWObd40orCt7j2fVw2P1gg&usqp=CAU"
+                                      width="100%" height="100%" class="align-items-center pb-2">
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <img
+                                    src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2023-10/231030-cornell-al-0756-101f4e.jpg"
+                                    width="100%" height="100%">
+                                </div>
+                              </div>
+                              <div class="columna_articulos pt-2">
+                                <h6 class="text-capitalize text-start align-self-center separación_silabica">
+                                  La extraordinaria misión de la Nasa que regresó a la Tierra con muestras de un
+                                  meteorito gigante.
+                                </h6>
+                              </div>
+                            </div>
+                          </a>
+
+                          <a href="https://cnnespanol.cnn.com/video/antisemitismo-actos-aumento-trax/"
+                            class="btn color0 border-dark border-3 letraF btn-outline focus-ring focus-ring-dark mt-3">
+                            <div class="row align-items-center">
+                              <div class="columna_articulos">
+                                <div class="row justify-content-center">
+                                  <div class="columna_articulos">
+                                    <img
+                                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/CNN.svg/1920px-CNN.svg.png"
+                                      width="100%" height="100%" class="align-items-center pb-2">
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <img
+                                    src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2023-10/231030-cornell-al-0756-101f4e.jpg"
+                                    width="100%" height="100%">
+                                </div>
+                              </div>
+                              <div class="columna_articulos pt-2">
+                                <h6 class="text-capitalize text-start align-self-center separación_silabica">
+                                  Alertan por aumento del
+                                  antisemitismo en
+                                  campus universitarios de EE.UU.
+                                </h6>
+                              </div>
+                            </div>
+                          </a>
+
+                          <a href="https://cnnespanol.cnn.com/video/antisemitismo-actos-aumento-trax/"
+                            class="btn color0 border-dark border-3 letraF btn-outline focus-ring focus-ring-dark mt-3">
+
+                            <div class="table-responsive py-3">
+                              <div class="container ">
+                                <div class="row">
+                                  <div class="col-6">
+                                    <div class="row justify-content-center">
+
+                                      <div class="col-6">
+                                        <img
+                                          src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Logo_Diario_El_Tiempo.png"
+                                          width="100%" height="100%" class="align-items-center pb-2">
+                                      </div>
+
+                                    </div>
+                                    <div class="row">
+                                      <img
+                                        src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2023-10/231030-cornell-al-0756-101f4e.jpg"
+                                        width="100%" height="100%">
+                                    </div>
+                                  </div>
+                                  <div class="col-6">
+                                    <h6 class="text-capitalize text-start align-self-center">Alertan por aumento del
+                                      antisemitismo en
+                                      campus universitarios de EE.UU.</h6>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </a>
+
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="publicacion_inicio">
+
+
+          <div class="container px-4 pb-4">
+            <div class="row gx-5">
+              <div class="col align-self-center">
+                <div class="p-1 border border-dark color0 rounded-3">
+
+                  <div class="card mb-3 border border-dark border-3">
+                    <div class="px-3 py-2 border-bottom border-dark border-5 color2 letraF">
+                      <b class="text-capitalize">Publicación 2</b>
+                    </div>
+                    <div class="card-body">
+
+                      <div class="container px-4">
+                        <img src="https://img.icons8.com/?size=512&id=40918&format=png" class="img-fluid">
+                      </div>
+
+                      <p class="card-text">Texto texto texto texto texto texto texto texto texto texto texto texto texto
+                        texto texto.</p>
+                      <a href="#"
+                        class="btn color1 border-dark border-3 letraF btn-outline focus-ring focus-ring-dark">Leer
+                        Publicación</a>
+                    </div>
+                  </div>
+
+                  <div class="accordion border border-dark border-3" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed color2 letraF focus-ring" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+                          aria-controls="panelsStayOpen-collapseTwo">
+                          <b class="text-capitalize">Artículos Relacionados</b>
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+
+                          <a href="https://cnnespanol.cnn.com/video/antisemitismo-actos-aumento-trax/"
+                            class="btn color0 border-dark border-3 letraF btn-outline focus-ring focus-ring-dark">
+
+                            <div class="table-responsive py-3">
+                              <div class="container ">
+                                <div class="row">
+                                  <div class="col-6">
+                                    <div class="row justify-content-center">
+
+                                      <div class="col-6">
+                                        <img
+                                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/CNN.svg/1920px-CNN.svg.png"
+                                          width="100%" height="100%" class="align-items-center pb-2">
+                                      </div>
+
+                                    </div>
+                                    <div class="row">
+                                      <img
+                                        src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2023-10/231030-cornell-al-0756-101f4e.jpg"
+                                        width="100%" height="100%">
+                                    </div>
+                                  </div>
+                                  <div class="col-6">
+                                    <h6 class="text-capitalize text-start align-self-center">Alertan por aumento del
+                                      antisemitismo en
+                                      campus universitarios de EE.UU.</h6>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </a>
+
+                          <a href="https://cnnespanol.cnn.com/video/antisemitismo-actos-aumento-trax/"
+                            class="btn color0 border-dark border-3 letraF btn-outline focus-ring focus-ring-dark mt-3">
+
+                            <div class="table-responsive py-3">
+                              <div class="container ">
+                                <div class="row">
+                                  <div class="col-6">
+                                    <div class="row justify-content-center">
+
+                                      <div class="col-6">
+                                        <img
+                                          src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Logo_Diario_El_Tiempo.png"
+                                          width="100%" height="100%" class="align-items-center pb-2">
+                                      </div>
+
+                                    </div>
+                                    <div class="row">
+                                      <img
+                                        src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2023-10/231030-cornell-al-0756-101f4e.jpg"
+                                        width="100%" height="100%">
+                                    </div>
+                                  </div>
+                                  <div class="col-6">
+                                    <h6 class="text-capitalize text-start align-self-center">Alertan por aumento del
+                                      antisemitismo en
+                                      campus universitarios de EE.UU.</h6>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </a>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="publicacion_inicio">
+
+
+          <div class="container px-4 pb-4">
+            <div class="row gx-5">
+              <div class="col align-self-center">
+                <div class="p-1 border border-dark color0 rounded-3">
+
+                  <div class="card mb-3 border border-dark border-3">
+                    <div class="px-3 py-2 border-bottom border-dark border-5 color2 letraF">
+                      <b class="text-capitalize">Publicación 3</b>
+                    </div>
+                    <div class="card-body">
+
+                      <div class="container px-4">
+                        <img src="https://img.icons8.com/?size=512&id=9877&format=png" class="img-fluid">
+                      </div>
+
+                      <p class="card-text">Texto texto texto texto texto texto texto texto texto texto texto texto texto
+                        texto texto.</p>
+                      <a href="#"
+                        class="btn color1 border-dark border-3 letraF btn-outline focus-ring focus-ring-dark">Leer
+                        Publicación</a>
+                    </div>
+                  </div>
+
+                  <div class="accordion border border-dark border-3" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed color2 letraF focus-ring" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true"
+                          aria-controls="panelsStayOpen-collapseThree">
+                          <b class="text-capitalize">Artículos Relacionados</b>
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+
+                          <a href="https://cnnespanol.cnn.com/video/antisemitismo-actos-aumento-trax/"
+                            class="btn color0 border-dark border-3 letraF btn-outline focus-ring focus-ring-dark">
+
+                            <div class="table-responsive py-3">
+                              <div class="container ">
+                                <div class="row">
+                                  <div class="col-6">
+                                    <div class="row justify-content-center">
+
+                                      <div class="col-6">
+                                        <img
+                                          src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Logo_Diario_El_Tiempo.png"
+                                          width="100%" height="100%" class="align-items-center pb-2">
+                                      </div>
+
+                                    </div>
+                                    <div class="row">
+                                      <img
+                                        src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2023-10/231030-cornell-al-0756-101f4e.jpg"
+                                        width="100%" height="100%">
+                                    </div>
+                                  </div>
+                                  <div class="col-6">
+                                    <h6 class="text-capitalize text-start align-self-center">Alertan por aumento del
+                                      antisemitismo en
+                                      campus universitarios de EE.UU.</h6>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </a>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
     </div>
 
-    <!-- Option 1: Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+    <div class="text-center pb-3">
+      <a href="https://www.facebook.com/"><img
+          src="https://raw.githubusercontent.com/JeanPCarrilloG/JeanPCarrilloG/main/ICONS/icons8-facebook.png" /></a>
+      <a href="https://www.x.com/"><img
+          src="https://raw.githubusercontent.com/JeanPCarrilloG/JeanPCarrilloG/main/ICONS/icons8-x.png" /></a>
+      <a href="https://www.instagram.com/"><img
+          src="https://raw.githubusercontent.com/JeanPCarrilloG/JeanPCarrilloG/main/ICONS/icons8-instagram.png" /></a>
+    </div>
+
+    <div class="container-fluid px-5 ">
+      <h6 class="text-end letraF"><b>Elaborado por:</b></h6>
+      <h6 class="text-end por letraF">Jean Paul Carrillo Galindo</h6>
+    </div>
+
+    <div class="container-fluid px-5 bg-primary p-5">
+      <div class="box">
+        <div><strong>Log:</strong></div>
+        <div class="log"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Option 1: Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script src="/Vistas/Modulos/PublicacionesInicio.js"></script>
+</body>
+
 </html>
