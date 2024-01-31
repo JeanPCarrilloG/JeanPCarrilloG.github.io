@@ -104,7 +104,7 @@ class Encabezado extends HTMLElement {
         
       <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
       data-bs-content="Compartir en Facebook">
-      <a class="btn" href="https://www.facebook.com/sharer/sharer.php?u="><img
+      <a class="btn" href="https://www.facebook.com/sharer/sharer.php?u=https://jeanpcarrillog.github.io/"><img
           src="https://raw.githubusercontent.com/JeanPCarrilloG/JeanPCarrilloG/main/ICONS/facebook-compartir.png" alt=""
           width="30" height="30" class="d-inline-block" />
       </a>
@@ -112,7 +112,7 @@ class Encabezado extends HTMLElement {
         
       <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
       data-bs-content="Compartir en X">
-      <a class="btn" href="https://www.x.com/https://twitter.com/intent/tweet?url=" ><img
+      <a class="btn" href="https://twitter.com/intent/tweet?url=https://jeanpcarrillog.github.io/" ><img
           src="https://raw.githubusercontent.com/JeanPCarrilloG/JeanPCarrilloG/main/ICONS/x-compartir.png" alt="" width="30"
           height="30" class="d-inline-block" />
       </a>
