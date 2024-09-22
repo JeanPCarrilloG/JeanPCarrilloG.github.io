@@ -8,11 +8,11 @@ class PieDePagina extends HTMLElement{
         const elementoHtml = document.createElement(identificador);
         elementoHtml.innerHTML = `
         <div class="text-center pb-3">
-        <a href="https://www.facebook.com/"><img
+        <a href="https://www.facebook.com/jeanpcarrillog?mibextid=ZbWKwL"><img
             src="https://raw.githubusercontent.com/JeanPCarrilloG/JeanPCarrilloG/main/ICONS/icons8-facebook.png" /></a>
-        <a href="https://www.x.com/"><img
+        <a href="https://x.com/JeanPCarrilloG?t=hGuGMIk7DalXUw-vKAibjw&s=08"><img
             src="https://raw.githubusercontent.com/JeanPCarrilloG/JeanPCarrilloG/main/ICONS/icons8-x.png" /></a>
-        <a href="https://www.instagram.com/"><img
+        <a href="https://www.instagram.com/jeanpcarrillog/?igsh=b2Uydzh6eHZ3b3Bz"><img
             src="https://raw.githubusercontent.com/JeanPCarrilloG/JeanPCarrilloG/main/ICONS/icons8-instagram.png" /></a>
         </div>
   
