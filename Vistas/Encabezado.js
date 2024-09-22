@@ -74,24 +74,19 @@ class Encabezado extends HTMLElement {
   
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page"
-                  href="file:///home/redes/Desarrollo/Github/JeanPCarrilloG.github.io/index.html?#">Inicio</a>
+                  href="./index.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active"
-                  href="file:///home/redes/Desarrollo/Github/JeanPCarrilloG.github.io/Publicacion/Guia.html">Publicaciones</a>
+                  href="">Publicaciones</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active"
-                  href="file:///home/redes/Desarrollo/Github/JeanPCarrilloG.github.io/Lectura/Articulos.html">Artículos</a>
+                  href="">Artículos</a>
               </li>
   
             </ul>
-  
-            <form class="d-flex mt-3" role="search">
-              <input class="form-control me-2" type="search" placeholder="Escribe tus términos de búsqueda "
-                aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
+
           </div>
         </div>
   
