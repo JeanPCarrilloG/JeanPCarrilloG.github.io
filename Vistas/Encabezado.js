@@ -112,22 +112,6 @@ class Encabezado extends HTMLElement {
         </ul>
   
       </div>
-        
-      <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
-      data-bs-content="Compartir en Facebook">
-      <a class="btn" href="https://www.facebook.com/sharer/sharer.php?u="><img
-          src="https://raw.githubusercontent.com/JeanPCarrilloG/JeanPCarrilloG/main/ICONS/icons8-facebook.png" alt=""
-          width="36" height="30" class="d-inline-block" />
-      </a>
-      </span>
-        
-      <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
-      data-bs-content="Compartir en X">
-      <a class="btn" href="https://www.x.com/https://twitter.com/intent/tweet?url=" ><img
-          src="https://raw.githubusercontent.com/JeanPCarrilloG/JeanPCarrilloG/main/ICONS/icons8-x.png" alt="" width="36"
-          height="30" class="d-inline-block" />
-      </a>
-      </span>
   
       <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
       data-bs-content="Compartir Enlace">
@@ -145,14 +129,3 @@ class Encabezado extends HTMLElement {
   }
 }
 customElements.define('encabezado-de-pagina', Encabezado);
-
-function ConvertirPDF() {
-//import { jsPDF } from "jspdf";
-
-  // Default export is a4 paper, portrait, using millimeters for units
-  const doc = new jsPDF();
-  
-  doc.text("Hello world!", 10, 10);
-  doc.save("a4.pdf");
-  
-}
