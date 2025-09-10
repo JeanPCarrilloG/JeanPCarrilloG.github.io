@@ -287,4 +287,112 @@
         flex: 0 0 auto;
         width: 70%;
     }
+}
+
+.disabled-link {
+    pointer-events: none;
+    background-color: #FFFFFF !important;
+    opacity: 0.5 !important;
+    cursor: not-allowed;
+}
+
+.dos-columnas {
+    column-count: 2;
+    column-gap: 2.25rem;
+    text-align: justify;
+    padding-left: 4.25rem;
+    padding-right: 4.25rem;
+}
+
+@media (max-width: 770px) {
+    .dos-columnas {
+        column-count: 1;
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
     }
+}
+
+@media (max-width: 642px) {
+    .dos-columnas {
+        column-count: 1;
+    }
+}
+
+@media (max-width: 515px) {
+    .dos-columnas {
+        column-count: 1;
+    }
+}
+
+.una-columna {
+    column-count: 1;
+    column-gap: 2.25rem;
+    text-align: justify;
+    padding-left: 4.25rem;
+    padding-right: 4.25rem;
+}
+
+@media (max-width: 770px) {
+    .una-columna {
+        column-count: 1;
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+    }
+}
+
+.aguafina {
+    font-family: 'Aguafina Script', cursive;
+    letter-spacing: 0.1rem;
+}
+
+.aguafinaSubTitulo {
+    font-family: 'Aguafina Script', cursive;
+    font-size: 270%;
+    letter-spacing: 0.1rem;
+}
+
+@media (max-width: 770px) {
+.aguafinaSubTitulo {
+    font-size: 220%;
+}
+}
+
+
+@media (max-width: 515px) {
+    .aguafinaSubTitulo {
+        font-size: 170%;
+    }
+}
+
+.grafico {
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    max-height: 300px;
+}
+
+@media (max-width: 515px) {
+    .grafico {
+        width: 100%;
+        max-width: 300px;
+        height: 100%;
+        max-height: 200px;
+        text-align: center;
+    }
+}
+
+.contenedor-grafico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.blockquote {
+    padding: 0rem 1rem 0rem 1rem;
+    font-size: 1.0rem;
+}
+
+.introduccion{
+    text-align: justify;
+}
