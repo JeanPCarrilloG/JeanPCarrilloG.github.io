@@ -20,7 +20,7 @@ class ArticuloRelacionadoCarrusel extends HTMLElement {
   
       } else {
   
-        lectura_rapida = `disabled`;
+        lectura_rapida = `disabled disabled-link`;
         boton_lectura_rapida = `Sin Lectura Rápida`;
   
       }
@@ -59,7 +59,7 @@ class ArticuloRelacionadoCarrusel extends HTMLElement {
               <div class="modal-body align-self-center ">
                 <img src="${imagen_fuente}" width="100%" height="100%">
               </div>
-              <div class="modal-footer justify-content-center">
+              <div class="modal-footer justify-content-center color0">
               <div class="row">
               <div class="col">
                 <img src="${logo}" width="100%" height="100%" class=" pb-2">
@@ -72,7 +72,7 @@ class ArticuloRelacionadoCarrusel extends HTMLElement {
                 </div>
         
                 <div class="row mt-1 me-2">
-                <a href="file:///home/redes/Desarrollo/Github/JeanPCarrilloG.github.io/Lectura/Articulos.html?${fuente}#lectura" class="btn color1 border-dark border-3 letraF btn-outline focus-ring focus-ring-dark ${lectura_rapida}"  ><b>${boton_lectura_rapida}</b></a>
+                <a href="https://jeanpcarrillog.github.io/Lectura/Articulos.html?${fuente}#lectura" class="btn color1 border-dark border-3 letraF btn-outline focus-ring focus-ring-dark ${lectura_rapida}"  ><b>${boton_lectura_rapida}</b></a>
                 </div>
                 </div>
               </div>
@@ -86,4 +86,3 @@ class ArticuloRelacionadoCarrusel extends HTMLElement {
     }
   }
   customElements.define('articulo-relacionado-carrusel', ArticuloRelacionadoCarrusel);
-  
