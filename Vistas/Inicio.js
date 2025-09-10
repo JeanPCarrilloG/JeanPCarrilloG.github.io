@@ -12,8 +12,8 @@ class PublicacionInicio extends HTMLElement {
     var elementoHtml = document.createElement(identificador);
     elementoHtml.innerHTML = `
       <div class="card mb-3 border border-dark border-3">
-      <div class="px-3 py-2 border-bottom border-dark border-5 color2 letraF">
-        <b class="text-capitalize">${titulo}</b>
+      <div class="px-3 pt-2 border-bottom border-dark border-5 color2 letraF">
+        <p class="text-capitalize"><b>${titulo}</b></p>
       </div>
       <div class="card-body">
     
@@ -21,7 +21,7 @@ class PublicacionInicio extends HTMLElement {
           <img src="${imagen}" class="img-fluid">
         </div>
     
-        <p class="card-text">${introduccion}</p>
+        <p class="card-text introduccion pt-1">${introduccion}</p>
         <a href="${url_publicacion}"
           class="btn color1 border-dark border-3 letraF btn-outline focus-ring focus-ring-dark">Leer
           Publicación</a>
@@ -54,7 +54,7 @@ class ArticuloRelacionado extends HTMLElement {
 
     } else {
 
-      lectura_rapida = `disabled`;
+      lectura_rapida = `disabled disabled-link`;
       boton_lectura_rapida = `Sin Lectura Rápida`;
 
     }
@@ -91,7 +91,7 @@ class ArticuloRelacionado extends HTMLElement {
             <div class="modal-body align-self-center ">
               <img src="${imagen_fuente}" width="100%" height="100%">
             </div>
-            <div class="modal-footer justify-content-center">
+            <div class="modal-footer justify-content-center color0">
             <div class="row">
             <div class="col">
               <img src="${logo}" width="100%" height="100%" class=" pb-2">
@@ -104,7 +104,7 @@ class ArticuloRelacionado extends HTMLElement {
               </div>
       
               <div class="row mt-1 me-2">
-              <a href="file:///home/redes/Desarrollo/Github/JeanPCarrilloG.github.io/Lectura/Articulos.html?${fuente}#lectura" class="btn color1 border-dark border-3 letraF btn-outline focus-ring focus-ring-dark ${lectura_rapida}"  ><b>${boton_lectura_rapida}</b></a>
+              <a href="https://jeanpcarrillog.github.io/Lectura/Articulos.html?${fuente}#lectura" class="btn color1 border-dark border-3 letraF btn-outline focus-ring focus-ring-dark ${lectura_rapida}"  ><b>${boton_lectura_rapida}</b></a>
               </div>
               </div>
             </div>
@@ -130,9 +130,12 @@ class LecturaRapida extends HTMLElement {
     var enlace = window.location.href.split("?");
     var elementoHtml = document.createElement(identificador);
 
+    const botonFuente = document.getElementById("boton-fuente");
+
     if (enlace.length == 1) {
 
       elementoHtml.innerHTML = `<object width="100%" height="1000em"></object>`;
+      botonFuente.setAttribute("href", "#");
 
     } else if (enlace.length == 2) {
 
@@ -140,15 +143,17 @@ class LecturaRapida extends HTMLElement {
       var url_publicacion = fuente[0];
 
       elementoHtml.innerHTML = `<object width="100%" height="1000em" data="${url_publicacion}"></object>`;
+      botonFuente.setAttribute("href", url_publicacion);
 
     } else {
 
       elementoHtml.innerHTML = `<object width="100%" height="1000em"></object>`;
+      botonFuente.setAttribute("href", "#");
 
     }
 
-
     this.appendChild(elementoHtml);
+    
   }
 }
 customElements.define('lectura-rapida', LecturaRapida);
