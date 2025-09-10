@@ -1,0 +1,420 @@
+<!doctype html5>
+<html lang="es">
+
+<head>
+    <!-- Metaetiquetas requeridas -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="G-SfrnrgMqnSvn50jSE1iqrEkNC0c3MrYyfQjBFjI30" />
+    <!-- Etiquetas pestaña -->
+    <title>Blog: Jean Paul Carrillo Galindo</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/JeanPCarrilloG/JeanPCarrilloG/main/ICONS/icons8-blog.png"
+        type="image/icon">
+    <link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- CSS -->
+    <link href="../HojasDeEstilos/Inicio.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body class="color1" >
+
+    <div class="container-fluid p-3">
+
+        <encabezado-de-pagina identificador="Encabezado"></encabezado-de-pagina>
+
+        <div class="text-center px-3 py-3">
+            <h1 class="fw-bold negrilla letraF">☆ Publicación I</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="card mb-3 border border-dark border-5">
+
+                <div class="card">
+                    <div class="container py-2">
+                        <div class="una-columna">
+                            <p style="text-align: right;  font-size: 0.75rem;">
+                                <i class="fa-solid fa-clock" style="font-size: 0.85rem;"></i><b> Tiempo de lectura:</b> 15 a 18 minutos para un lector promedio.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="imprimir" class="container py-2">
+
+                        <div class="text-center mb-1">
+                            <h1 id="nombreArchivo" class="aguafina negrilla"><b>Sentido de Pertenencia y las Elecciones en COLOMBIA</b>
+                            </h1>
+                        </div>
+
+                        <div class="container text-center">
+                            <div class="row ">
+                                <div class="dos-columnas">
+                                    <p>Este artículo está basado en las últimas siete elecciones presidenciales en
+                                        Colombia, desde el año 1998, durante las cuales han gobernado cinco presidentes.
+                                        El análisis tiene en cuenta las crisis sociales y económicas que se han
+                                        presentado en este periodo, relacionadas con el mercado internacional del
+                                        petróleo y gas, la minería, la agroindustria y agricultura, la industria
+                                        manufacturera, el turismo, y la construcción e infraestructura.</p>
+                                    <p>Estas crisis han traído consigo problemas vinculados al narcotráfico y la
+                                        prostitución, los cuales han generado situaciones de decadencia y pobreza. Esto
+                                        ha impedido el avance de la población hacia una mejor educación y condiciones de
+                                        vida, afectando directamente el progreso personal, familiar y comunitario. A su
+                                        vez, dificulta que la sociedad se conciba como un solo organismo en crecimiento
+                                        integral, en todos los aspectos que conforman la sostenibilidad.</p>
+                                    <p>Además, estas situaciones conllevan afectaciones ambientales que podrían resultar
+                                        irreparables si no se realiza un uso adecuado de la principal fuente de ingresos
+                                        del país, que se basa en la explotación de recursos naturales.</p>
+                                    <p>Durante este periodo, el crecimiento poblacional de Colombia ha pasado de
+                                        aproximadamente 40,1 millones de personas a 53,1 millones, según datos y
+                                        proyecciones estadísticas del gobierno. Esto representa un incremento cercano al
+                                        24,4 %, cuyas consecuencias se reflejan en indicadores como el desempleo.</p>
+                                </div>
+
+                                <h5 class="pt-2" style="text-align: center;">
+                                    Tasa de desempleo en Colombia (1999–2024) según la OIT
+                                </h5>
+
+                                <div id="textosGraficoDesempleo" style="display:none;">
+                                    <span id="ejeYDesempleo">Porcentaje % Fuerza Laboral Total</span>
+                                    <span id="ejeXDesempleo">Año</span>
+                                </div>
+                                <div class="contenedor-grafico">
+                                    <canvas id="graficoDesempleo" class="grafico"></canvas>
+                                </div>
+                                <div class="una-columna">
+                                    <p style="text-align: right;  font-size: 0.65rem;">
+                                        Fuente: Banco Mundial, Desempleo total (% de la fuerza laboral total) –
+                                        Colombia,
+                                        2025<br>
+                                        Gráfico elaborado en JavaScript por Jean Paul Carrillo Galindo.
+                                    </p>
+                                </div>
+                                <div class="dos-columnas">
+                                    <p>De acuerdo con la Organización Internacional del Trabajo y la información
+                                        propuesta, se puede concluir que solucionar este inconveniente no es sencillo si
+                                        la ausencia de educación continua y educación superior se mantiene. Esto impide
+                                        el acceso a trabajos especializados donde los ingresos obtenidos permitan
+                                        mejoras en las condiciones de vida. Esta situación es la causa principal de la
+                                        ausencia de trabajos formales, donde la reducción del desempleo se ve reflejada
+                                        en la ejecución correcta de los programas presidenciales.</p>
+                                    <p>El desinterés del gabinete presidencial hacia la población y los conflictos en
+                                        los órganos del poder público conllevan respuestas como la del gobierno del
+                                        expresidente Andrés Pastrana, en el que se crean integraciones de nuevos
+                                        partidos políticos para hacer reformas sin importar su espectro, como lo fue
+                                        <em>Primero Colombia</em>, que abrió paso al <em>Partido Social de Unidad
+                                            Nacional</em>, actualmente llamado <em>Partido de la Unión por la
+                                            Gente</em>. Este partido, en general, pudo satisfacer al mayor porcentaje de
+                                        la población en una época de la historia que solo reflejaba violencia y que
+                                        requirió una respuesta similar, avalada por el mayor número de personas.
+                                    </p>
+                                    <p>Este contexto se convirtió en el objetivo principal del plan de gobierno del
+                                        expresidente Álvaro Uribe Vélez, quien ha sido criticado con insistencia.
+                                        Cualquier inconformidad frente a este gobierno tomó más de una década en poder
+                                        justificarse como una acción en contra de los derechos humanos. Fue una década
+                                        marcada por violaciones a los derechos humanos, bajo un plan de gobierno llamado
+                                        <em>Seguridad Democrática</em>. La frase "Brindar Seguridad Democrática",
+                                        incluida en su plan de desarrollo, no son solo palabras bonitas; definen las
+                                        acciones del gobierno durante ese mandato.
+                                    </p>
+                                    <p>Textos como este:</p>
+                                    <blockquote class="blockquote">
+                                        <p><em>“Necesitamos un estatuto antiterrorista que facilite la detención, la
+                                                captura, el allanamiento. A diferencia de mis años de estudiante, hoy
+                                                violencia política y terrorismo son idénticos. Cualquier acto de
+                                                violencia por razones políticas o ideológicas es terrorismo. También es
+                                                terrorismo la defensa violenta del orden estatal.”</em></p>
+                                    </blockquote>
+                                    <p>...reflejan fanatismos en quienes vivían la violencia constante de la época, pero
+                                        también justifican la permisividad de actos violentos sin dar mayores detalles.
+                                        Para muchos, estas fueron acciones conscientes del Estado que llevaron al poder,
+                                        con decisiones unánimes (la mayor parte de la población), a quienes hoy son
+                                        cuestionados y condenados por hechos que, al entrar en detalle, no tienen
+                                        relación directa con las ejecuciones extrajudiciales que se realizaron durante
+                                        ese gobierno, ya que dichas acciones fueron avaladas por gran parte de la
+                                        población. Aun así, este es el ejemplo correcto para indicar cuán importante es
+                                        saber elegir.</p>
+                                    <p>No será posible recuperar la vida de quienes murieron en manos de la ilegalidad,
+                                        pero sí mejorar la de quienes aún siguen. El problema recae en insistir que los
+                                        gobiernos anteriores fueron mejores o peores, sin destacar los verdaderos
+                                        cambios que afectan a todos. La violencia es el principal método que se usa para
+                                        generar interés por parte de los votantes y, si se evalúa, es el punto de vista
+                                        partidista el que prima sobre ellos, y no su identidad nacional, que debería ser
+                                        la prioridad y el verdadero interés por mantener.</p>
+                                    <p>Colombia seguirá siendo Colombia si sus habitantes impiden que esto cambie, pero
+                                        no solo eso es necesario: también es fundamental que se sientan tan orgullosos
+                                        de ella como quienes la fundaron, como quienes han vivido en ella y como quienes
+                                        persisten en hacerla igual o mejor que otros lugares del mundo. Candidatos
+                                        presidenciales aspiran a tener ejércitos tan fuertes y grandes como los de China
+                                        o Rusia; personas tan pacíficas como el ser más pacífico nacido en la India; una
+                                        Colombia que cree tecnología como en Silicon Valley (Estados Unidos) o una
+                                        educación tan gratuita como la de Suiza. Personas que tienen en común el deseo
+                                        de solucionar los problemas clave del país, pero que muchas veces se manipulan
+                                        como variables para obtener resultados diferentes, de acuerdo con la
+                                        conveniencia de grupos políticos.</p>
+                                </div>
+
+                                <h1 class="aguafinaSubTitulo pt-3" style="text-align: center;"><b>Motivos por los que se
+                                        vota</b></h1>
+
+                                <div class="dos-columnas">
+                                    <p>El odio hacia quienes han hecho daño a otros miembros de la misma sociedad,
+                                        justificando sus acciones bajo ese mismo motivo, elimina cualquier tipo de
+                                        avance logrado por gobiernos anteriores. Colombia es un organismo que se compone
+                                        de la vida que sus habitantes le dan. Las respuestas a insistentes intentos de
+                                        elección por un cambio, exigido en repetidas ocasiones por la población, han
+                                        generado grupos como el partido político <em>Colombia Humana</em>, que se
+                                        integra al <em>Pacto Histórico</em>. Este último reúne a la mayor cantidad de
+                                        representantes en el Congreso durante el periodo 2022-2026 y tiene como enfoque
+                                        principal solucionar las diferentes crisis del país, oponiéndose a los
+                                        lineamientos definidos por gobiernos anteriores, donde las agresiones por parte
+                                        del mismo Estado fueron aceptadas de manera consciente.</p>
+                                    <p>En ocasiones, estas agresiones causaron discusiones entre los integrantes del
+                                        Congreso, muchos de los cuales hoy conforman el grupo de ministros o han hecho
+                                        parte del gabinete en este mandato. Ellos tienen como común denominador la
+                                        insistencia en lograr la paz, no de la manera más rápida, sino de la forma
+                                        correcta, donde no sea el temor ni el odio lo que alimente a las futuras
+                                        generaciones de Colombia. El objetivo es mantener con vida a la mayor cantidad
+                                        de población posible, evitando que se repitan errores del pasado, errores que
+                                        han sido justificados por agresiones hacia poblaciones específicas, sus familias
+                                        y sus representantes, quienes fueron silenciados de manera vulgar por parte de
+                                        grupos terroristas. Estos grupos, en sus orígenes, comenzaron como
+                                        organizaciones armadas ilegales que, al igual que otros, intentaron defender su
+                                        territorio por el simple hecho de haber nacido, crecido y mantenido ese lugar
+                                        para su comunidad y sus familias.</p>
+                                    <p>Estas comunidades buscaban dar sentido a su vida mediante la cooperación, con el
+                                        fin de obtener mejores condiciones que pudieran disfrutar tanto ellos como las
+                                        generaciones futuras, sin odio alguno, con el objetivo de construir una vida tan
+                                        satisfactoria como cada individuo decida, sin hacer daño a otros, sino haciendo
+                                        posible su plan de vida. Sin embargo, muchos de estos grupos terminaron
+                                        beneficiándose económicamente del narcotráfico, donde familias enteras fueron
+                                        amenazadas y comprometidas de manera ilegal, viéndolo como la única salida para
+                                        hacer realidad sus sueños o, en su defecto, perder lo que habían construido
+                                        durante años.</p>
+                                    <p>Estas intimidaciones terminaron en prostitución y drogadicción. No se habla aquí
+                                        solo de drogas lícitas o ilícitas permitidas por las leyes de diferentes países,
+                                        sino del nivel de dependencia que estas generan. Tampoco se habla de academias
+                                        de modelaje, sino de transacciones con mujeres en su mayoría para obtener
+                                        beneficios económicos, rebajándolas a objetos a los que se les atribuye un valor
+                                        basado en una supuesta belleza, belleza que se les hace creer que es su mayor
+                                        atributo, lo cual no es cierto si se tiene en cuenta que la inteligencia humana
+                                        ha permitido incluso que hombres transgénero participen y ganen en reinados de
+                                        belleza.</p>
+                                    <p>Se habla, en realidad, de redes de tráfico ilegal, en las que quienes forman
+                                        parte terminan perdiendo sus vidas para beneficiar a otros que, en algún momento
+                                        de la historia, eligieron un camino incorrecto con el propósito de mejorar su
+                                        poder adquisitivo a toda costa, anteponiéndolo al amor humano que nos distingue
+                                        como los seres vivos más inteligentes del planeta y del universo conocido hasta
+                                        ahora.</p>
+                                    <p>Tomar como ejemplo a algunos integrantes del gobierno, que hacen valer el amor
+                                        hacia los demás incluso cuando ellos mismos han sido víctimas de la violencia,
+                                        sirve como guía para entender que Colombia mejora constantemente, aunque los
+                                        índices de paz mundial posicionan al país como el más violento de América del
+                                        Sur desde que dicho informe comenzó a elaborarse.</p>
+                                </div>
+
+                                <h5 class="pt-2" style="text-align: center;">
+                                    Clasificación Global del Índice de Paz en Colombia (de 163 países 2008–2024)
+                                </h5>
+
+                                <div id="textosGrafico" style="display:none;">
+                                    <span id="tituloEjeY">Posición en Clasificación Global</span>
+                                    <span id="tituloEjeX">Año</span>
+                                </div>
+                                <div class="contenedor-grafico">
+                                    <canvas id="graficoPaz" class="grafico"></canvas>
+                                </div>
+                                <div class="una-columna">
+                                    <p style="text-align: right;  font-size: 0.65rem;">
+                                        Fuente: Índice de Paz Global – Instituto de Economía y Paz, 2025.<br>
+                                        Gráfico elaborado en JavaScript por Jean Paul Carrillo Galindo.
+                                    </p>
+                                </div>
+                                <div class="dos-columnas">
+                                    <p>Este dato está compuesto por 23 indicadores, y da referencia a que, desde un
+                                        punto de vista menos optimista, no se logra una mejora relevante. En realidad,
+                                        Colombia no parece ser más pacífica; sin embargo, se puede asegurar que no es
+                                        posible comparar esta época con otra en la que sobresalía la violencia.</p>
+                                    <p>A través de cada uno de los candidatos electos se han logrado mejoras que no
+                                        deben subestimarse, pese a que los datos pueden ser publicados de manera
+                                        conveniente por los diferentes medios de comunicación, con el fin de generar
+                                        pánico en los Integrantes de un país.</p>
+                                    <p>No es igual afirmar que Colombia es el país más violento de América del Sur a
+                                        señalar que el país ha subido cinco posiciones en el Índice de Paz Global. Son
+                                        datos que pueden infundir temor sobre los diferentes periodos de gobierno, pero
+                                        que en realidad conciernen a Colombia y a cada uno de sus habitantes.</p>
+                                    <p>Esto implica que la desinformación no debe impedir el avance en las condiciones
+                                        de vida. Si se enfoca este índice hacia uno de los datos más usados por
+                                        gobiernos anteriores y también por los candidatos presidenciales, como los
+                                        homicidios percibidos, se puede tener una visión más crítica y contextualizada
+                                        de la situación del país.</p>
+                                </div>
+
+                                <h5 class="pt-2" style="text-align: center;">
+                                    Tasa de homicidios intencionales en Colombia (1999–2024)
+                                </h5>
+
+                                <div id="textosGraficoHomicidios" style="display:none;">
+                                    <span id="ejeYHomicidios">Tasa por cada 100,000 habitantes</span>
+                                    <span id="ejeXHomicidios">Año</span>
+                                </div>
+                                <div class="contenedor-grafico">
+                                    <canvas id="graficoHomicidios" class="grafico"></canvas>
+                                </div>
+                                <div class="una-columna">
+                                    <p style="text-align: right;  font-size: 0.65rem;">
+                                        Fuente: UNODC, Banco Mundial, ONU / Policía Nacional / Statista (2025).<br>
+                                        Gráfico elaborado en JavaScript por Jean Paul Carrillo Galindo.
+                                    </p>
+                                </div>
+                                <div class="dos-columnas">
+                                    <p>Estos datos detallan las mejoras que se han logrado, no por pertenecer a un
+                                        partido político, sino por la forma en que se seleccionan a los representantes
+                                        presidenciales, de acuerdo con las necesidades de la población. Los planes de
+                                        desarrollo que se redactan deben cumplirse en cada mandato y justificarse de
+                                        manera adecuada. Además, es necesario proporcionar esta información a entidades
+                                        mundiales que registran el histórico de datos verificados, con la intención de
+                                        actuar de manera directa cuando se requiera una intervención o ayuda humanitaria
+                                        por parte de la ONU.</p>
+                                    <p>Desde la instalación de la Oficina del Alto Comisionado de las Naciones Unidas en
+                                        Colombia para los Derechos Humanos en 1997, como respuesta al conflicto armado,
+                                        se ha mantenido una intervención constante debido a violaciones graves a los
+                                        derechos humanos, incluyendo desplazamientos y asesinatos de líderes sociales.
+                                        Estas intervenciones, aunque no se han detenido, han contribuido a reducir las
+                                        agresiones que intimidan a la población durante sus elecciones presidenciales,
+                                        agresiones cuyo objetivo es favorecer los diferentes tráficos ilícitos que
+                                        destruyen al país, incluso con la presencia activa de los organismos
+                                        humanitarios vinculados a la ONU.</p>
+                                    <p>Los Objetivos de Desarrollo Sostenible (ODS) también requieren la atención de los
+                                        votantes, ya que abordan problemas globales que deben ser atendidos
+                                        adecuadamente. En este sentido, se han logrado avances en el índice de medición
+                                        brindado por la ONU, pasando de 64.78 a 70.46, lo cual posiciona al país en un
+                                        puesto intermedio entre los 167 países evaluados, ocupando actualmente el número
+                                        75. Inicialmente, en el año 2019, de acuerdo con la clasificación actual, pudo
+                                        haber sido el puesto 108, aunque en su momento se le asignó el lugar 67. Esto
+                                        demuestra que, a pesar de una crisis mundial, se han podido lograr avances en
+                                        poco tiempo, considerando que el plazo previsto para el cumplimiento de los ODS
+                                        es de 15 años desde su creación en la Cumbre de Desarrollo Sostenible de la ONU,
+                                        en septiembre de 2015.</p>
+                                    <p>Sin embargo, debido a conflictos armados y desastres sanitarios, es posible que
+                                        no se logre cumplir totalmente con estos objetivos. Siendo Colombia un país
+                                        independiente, los planes de gobierno funcionales no deben estimarse por
+                                        afinidad política, sino por la capacidad de los candidatos para proponer mejoras
+                                        concretas en áreas como educación de calidad, igualdad de género, agua limpia y
+                                        saneamiento, trabajo decente y crecimiento económico, acción por el clima, vida
+                                        de ecosistemas terrestres, y paz, justicia e instituciones sólidas. Estos son
+                                        los objetivos con menor progreso y en los que el gobierno trabaja actualmente,
+                                        cumpliendo el plan de gobierno propuesto, de acuerdo con los lineamientos
+                                        internacionales.</p>
+                                    <p>En momentos anteriores, problemáticas como la infraestructura, la producción, la
+                                        pobreza y la desigualdad fueron abordadas por gobiernos anteriores, logrando
+                                        pasar de ser graves a leves en muchos sectores del país. En zonas donde antes la
+                                        convivencia era imposible por la violencia, como en los departamentos de
+                                        Antioquia y Sucre incluyendo ciudades como Medellín y Tunja no solo se mejoró la
+                                        infraestructura vial, sino que también se registró una reducción en los
+                                        homicidios.</p>
+                                    <p>Se puede afirmar que, en un periodo de cuatro años, un país no cambia de manera
+                                        radical. Sin embargo, al ser consciente de que un país es una unidad, no se debe
+                                        culpar a un partido político o a una persona específica, sino a la falta de
+                                        conciencia de la población sobre su poder de decisión. La inteligencia ciudadana
+                                        es el recurso principal para conservar los logros alcanzados, valorarlos a su
+                                        debido tiempo y ejercer un criterio de decisión libre, sin ceder ante el miedo
+                                        impuesto por quienes no desean que otros vivan con los mismos derechos y
+                                        seguridad que ellos.</p>
+                                </div>
+                                <div class="una-columna  pt-2" style="text-align: right;">
+                                    <p><em><b>Autor: </b>Jean Paul Carrillo Galindo</em></p>
+                                </div>
+                                <div class="una-columna">
+                                    <p><b>Fuentes:</b></p>
+                                </div>
+                                <div class="dos-columnas pb-2">
+                                    <ul>
+                                        <li><a href="https://colaboracion.dnp.gov.co/CDT/PND/PND.pdf">Departamento
+                                                Nacional de Planeación</a></li>
+                                        <li><a href="https://mineducacion.gov.co/1621/articles-85269_archivo_pdf.pdf">Ministerio
+                                                de Educación Nacional</a></li>
+                                        <li><a href="https://countryeconomy.com/demography/global-peace-index/colombia">Economía
+                                                del País</a></li>
+                                        <li><a
+                                                href="https://datos.bancomundial.org/indicador/SL.UEM.TOTL.ZS?end=2024&locations=CO&start=1999&view=chart">Banco
+                                                Mundial</a></li>
+                                        <li><a
+                                                href="https://www.indexmundi.com/es/datos/colombia/tasa-de-homicidios?utm_source=chatgpt.com#google_vignette">Index
+                                                Mundi</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col py-2 px-4 border-top border-dark border-5">
+                        <div class="row text-center text-md-start">
+                            <div class="col-12 col-md-4 mb-2 mb-md-0">
+                            </div>
+                            <div class="col-12 col-md-4 mb-2 mb-md-0 text-center">
+                                <span class="d-inline-block" tabindex="0" data-bs-toggle="popover"
+                                    data-bs-trigger="hover focus" data-bs-content="Convertir a PDF">
+                                    <a onclick="convertirPDF('imprimir')"
+                                        class="btn color1 border-dark border-3 letraF btn-outline focus-ring focus-ring-dark">
+                                        <b>Convertir a PDF</b>
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="col-12 col-md-4 text-md-end text-center">
+                                <span class="d-inline-block" tabindex="0" data-bs-toggle="popover"
+                                    data-bs-trigger="hover focus" data-bs-content="Próximamente">
+                                    <a onclick=""
+                                        class="btn color1 border-dark border-3 letraF btn-outline focus-ring focus-ring-dark disabled disabled-link"
+                                        style="border-radius: 0 0.4rem 2.7rem 0;">
+                                        <b>Siguiente . . .</b>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <pie-de-pagina identificador="Pie_De_Pagina"></pie-de-pagina>
+
+            <!-- Vistas -->
+            <script src="../Vistas/Inicio.js"></script>
+            <script src="../Vistas/Encabezado.js"></script>
+            <script src="../Vistas/PieDePagina.js"></script>
+            <script src="../Vistas/Publicaciones.js"></script>
+            <script src="../Vistas/Graficos/Sentido_de_Pertenencia.js"></script>
+
+            <!-- Opción 1: Bootstrap -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                crossorigin="anonymous"></script>
+
+            <!-- Bootstrap Popover -->
+            <script>
+                const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+                const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+            </script>
+
+            <!--Vínculo Traductor Google -->
+            <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+            <!-- JavaScript librerías para DOM operaciones CDNJS-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+                integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+</html>
