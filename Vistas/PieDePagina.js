@@ -8,12 +8,14 @@ class PieDePagina extends HTMLElement{
         const elementoHtml = document.createElement(identificador);
         elementoHtml.innerHTML = `
         <div class="text-center pb-3">
-        <a href="https://www.facebook.com/jeanpcarrillog?mibextid=ZbWKwL"><img
+        <a href="https://www.facebook.com/jeanpcarrillog"><img
             src="https://raw.githubusercontent.com/JeanPCarrilloG/JeanPCarrilloG/main/ICONS/icons8-facebook.png" /></a>
-        <a href="https://x.com/JeanPCarrilloG?t=hGuGMIk7DalXUw-vKAibjw&s=08"><img
+        <a href="https://x.com/JeanPCarrilloG"><img
             src="https://raw.githubusercontent.com/JeanPCarrilloG/JeanPCarrilloG/main/ICONS/icons8-x.png" /></a>
-        <a href="https://www.instagram.com/jeanpcarrillog/?igsh=b2Uydzh6eHZ3b3Bz"><img
+        <a href="https://www.instagram.com/jeanpcarrillog"><img
             src="https://raw.githubusercontent.com/JeanPCarrilloG/JeanPCarrilloG/main/ICONS/icons8-instagram.png" /></a>
+        <a href="https://www.tiktok.com/@jeanpcarrillog"><img
+            src="https://raw.githubusercontent.com/JeanPCarrilloG/JeanPCarrilloG/main/ICONS/icons8-tiktok.png" /></a>
         </div>
   
         <div class="container-fluid px-5 ">
